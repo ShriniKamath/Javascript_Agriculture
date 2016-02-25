@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Graph Page </title>
+  <meta charset="utf-8">
+  <style>
+  path {
+    stroke: steelblue;
+    stroke-width: 1;
+    fill: none;
+  }
+  .axis {
+    shape-rendering: crispEdges;
+  }
+  .x.axis line {
+    stroke: lightgrey;
+  }
+  .x.axis .minor {
+    stroke-opacity: .5;
+  }
+  .x.axis path {
+    display: none;
+  }
+  .y.axis line, .y.axis path {
+    fill: none;
+    stroke: #000;
+  }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+  <script src="../js/lib/d3.v3.min.js" type="text/javascript"></script>
+  <script src="../js/csv_json_script.js" type="text/javascript"></script>
+  <script>
+  GraphDraw("../json/commercialCropsData.json");
+  </script>
+</body>
+</html>
